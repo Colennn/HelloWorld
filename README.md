@@ -311,7 +311,7 @@ select last _insert_id()
 
 ### 12、Mybatis工作原理？
 
-![img](F:/MarkDownPic/2.webp)
+![img](/MarkDownPic/1.webp)
 
 ##### 原理：
 
