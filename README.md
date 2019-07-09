@@ -208,7 +208,7 @@ String，ModelAndView，List，Set 等
 
 ### 8、SpringMVC的工作流程图?
 
-![img](F:\MarkDownPic\1.webp)
+![img](/MarkDownPic/1.webp)
 
 ### 9、Struts2 和 SpringMVC的区别?
 
@@ -311,7 +311,7 @@ select last _insert_id()
 
 ### 12、Mybatis工作原理？
 
-![img](/MarkDownPic/1.webp)
+![img](/MarkDownPic/2.webp)
 
 ##### 原理：
 
