@@ -32,6 +32,8 @@
 
 [SSM整合知识点](SSM/README.md)
 
+[SOA结构、Dubbo原理](https://github.com/JavaCorn/eshop/blob/master/study/Dubbo.md)
+
 [Redis、Jedis、Junit4](https://github.com/JavaCorn/eshop/blob/master/study/Redis.md)
 
 [Jsonp、HttpClient跨域问题](https://github.com/JavaCorn/eshop/blob/master/study/AJAX%E3%80%81Jsonp%E3%80%81HttpClient.md)
