@@ -22,6 +22,7 @@
 > 2019/08/07 ：
 >
 > 1. 新增MySQL索引相关知识
+> 2. 新增NIO、AIO、BIO、Netty内容
 
 
 ### 数据结构
@@ -48,6 +49,8 @@
 [Socket网络编程](Socket/socket网络编程.md)
 
 [TCP之流量控制、拥塞控制](Socket/TCP之流量控制、拥塞控制.md)
+
+[NIO、BIO、AIO、Netty](IO/io.md)
 
 
 
