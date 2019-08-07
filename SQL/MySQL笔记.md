@@ -1,10 +1,6 @@
 # MySQL笔记
 
-
-
 [TOC]
-
-
 
 ## 基本语句
 
@@ -291,7 +287,18 @@ DELIMITER;
    END
    ```
 
-   ​
+
+
+
+
+## MySQL左连接 右连接 内连接的区别
+
+1.内连接，显示两个表中有联系的所有数据
+
+2.左连接，以左表为参照，显示所有数据，右表中没有则以null显示
+
+3.右连接，以右边为参照显示数据，左表中没有则以null显示
+
 
 
 
@@ -308,6 +315,10 @@ DELIMITER;
 [MySQL实现rank排名查询](https://blog.csdn.net/justry_deng/article/details/80597916)
 
 [MySQL varchar转int类型的方法](https://blog.csdn.net/qq_26599807/article/details/82012498)
+
+[mysql左连接 右连接 内连接的区别 ](https://www.cnblogs.com/itboxue/p/11144785.html)
+
+
 
 
 
