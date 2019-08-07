@@ -52,6 +52,8 @@
 
 [MySQL基础](SQL/MySQL笔记.md)
 
+[MySQL索引实现原理、索引使用策略](SQL/sqlIndex.md)
+
 
 
 ### 其他
