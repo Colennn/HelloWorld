@@ -171,7 +171,7 @@ https://www.cnblogs.com/qishui/p/5428938.html
 
      特殊端口
 
-     ![1](pic/4.JPG)
+     ![1](pic/4.jpg)
 
      ​
 
