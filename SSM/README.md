@@ -208,7 +208,7 @@ String，ModelAndView，List，Set 等
 
 ### 8、SpringMVC的工作流程图?
 
-![img](/MarkDownPic/1.webp)
+![img](MarkDownPic/1.webp)
 
 ### 9、Struts2 和 SpringMVC的区别?
 
