@@ -65,7 +65,7 @@ https://www.cnblogs.com/qishui/p/5428938.html
 
 ### Socket传输原理
 
-![1](pic\1.JPG)
+![1](pic/1.JPG)
 
 
 
@@ -87,11 +87,11 @@ https://www.cnblogs.com/qishui/p/5428938.html
 
 ### TCP传输图解
 
-![1](pic\2.JPG)
+![1](pic/2.JPG)
 
 ### UDP传输图解
 
-![1](pic\3.JPG)
+![1](pic/3.JPG)
 
 
 
@@ -171,7 +171,7 @@ https://www.cnblogs.com/qishui/p/5428938.html
 
      特殊端口
 
-     ![1](pic\4.JPG)
+     ![1](pic/4.JPG)
 
      ​
 
@@ -266,7 +266,7 @@ https://www.cnblogs.com/qishui/p/5428938.html
 - 多播：给一组发，组播
 - 广播：所有人都可以接收
 
-![1](pic\5.JPG)
+![1](pic/5.JPG)
 
 
 
@@ -291,7 +291,7 @@ https://www.cnblogs.com/qishui/p/5428938.html
 
 ### TCP链接、传输流程
 
-![1](pic\6.JPG)
+![1](pic/6.JPG)
 
 ### TCP能做什么？
 
@@ -316,35 +316,35 @@ https://www.cnblogs.com/qishui/p/5428938.html
 
 ### 服务器端Socket流程
 
-![1](pic\7.JPG)
+![1](pic/7.JPG)
 
 
 
 ### 服务器端Socket流程
 
-![1](pic\8.JPG)
+![1](pic/8.JPG)
 
 
 
 ### 扩展-Socket与进程关系
 
-![1](pic\9.JPG)
+![1](pic/9.JPG)
 
 
 
 ### TCP连接的可靠性
 
-![1](pic\10.JPG)
+![1](pic/10.JPG)
 
 
 
 ### 三次握手-数据随机的必要性
 
-![1](pic\11.JPG)
+![1](pic/11.JPG)
 
 ### 可靠性连接-四次挥手
 
-![1](pic\12.JPG)
+![1](pic/12.JPG)
 
 
 
