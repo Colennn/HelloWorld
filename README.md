@@ -6,7 +6,7 @@
 ------
 
 - 技术类
-  - [《Java并发编程之美》](readingNotes/技术类/《Java并发编程之美》/《Java并发编程之美》.md)
+  - [《Java并发编程之美》](readingNotes/技术类/《Java并发编程之美》/《Java并发编程之美》.md)：共三章，目前已完成第一章
 - 非技术类
   - [《小狗钱钱》](readingNotes/非技术类/《小狗钱钱》.md)
   - [《情商》](readingNotes/非技术类/《情商》.md)
