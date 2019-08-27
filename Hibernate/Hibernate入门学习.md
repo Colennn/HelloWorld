@@ -2,12 +2,18 @@
 
 ​	本文主要讲的是Hibernate的入门知识。
 
-什么是Hibernate？什么是ORM？
-------
+## 目录
+
+* [Hibernate入门学习](#hibernate%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0)
+  * [什么是Hibernate？什么是ORM？](#%E4%BB%80%E4%B9%88%E6%98%AFhibernate%E4%BB%80%E4%B9%88%E6%98%AForm)
+  * [Hibernate开发步骤](#hibernate%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4)
+  * [准备Hibernate环境](#%E5%87%86%E5%A4%87hibernate%E7%8E%AF%E5%A2%83)
+
+
+## 什么是Hibernate？什么是ORM？
+
 
 ​	Hibernate是一个ORM框架（Object Relative DateBase Mapping），在Java对象与关系数据库之间建立某种映射，以实现直接存取Java对象。
-
-
 
 ## Hibernate开发步骤
 
@@ -54,68 +60,68 @@
 
 
    ```java
-   package com.atguigu.hibernate.helloworld;
+      package com.atguigu.hibernate.helloworld;
 
-   import java.sql.Blob;
-   import java.util.Date;
+      import java.sql.Blob;
+      import java.util.Date;
 
-   public class News {
-   	
-   	private Integer id;
-   	private String title;
-   	private String author;
-     	private Date date;
-     
-   	public Integer getId() { 
-   		return id;
-   	}
+      public class News {
+      	
+      	private Integer id;
+      	private String title;
+      	private String author;
+        	private Date date;
+        
+      	public Integer getId() { 
+      		return id;
+      	}
 
-   	public void setId(Integer id) {
-   		this.id = id;
-   	}
+      	public void setId(Integer id) {
+      		this.id = id;
+      	}
 
-   	public String getTitle() {
-   		return title;
-   	}
+      	public String getTitle() {
+      		return title;
+      	}
 
-   	public void setTitle(String title) {
-   		this.title = title;
-   	}
+      	public void setTitle(String title) {
+      		this.title = title;
+      	}
 
-   	public String getAuthor() {
-   		return author;
-   	}
+      	public String getAuthor() {
+      		return author;
+      	}
 
-   	public void setAuthor(String author) {
-   		this.author = author;
-   	}
+      	public void setAuthor(String author) {
+      		this.author = author;
+      	}
 
-   	public Date getDate() {
-   		return date;
-   	}
+      	public Date getDate() {
+      		return date;
+      	}
 
-   	public void setDate(Date date) {
-   		this.date = date;
-   	}
+      	public void setDate(Date date) {
+      		this.date = date;
+      	}
 
-   	public News(String title, String author, Date date) {
-   		super();
-   		this.title = title;
-   		this.author = author;
-   		this.date = date;
-   	}
-   	
-   	public News() {
-   		// TODO Auto-generated constructor stub
-   	}
+      	public News(String title, String author, Date date) {
+      		super();
+      		this.title = title;
+      		this.author = author;
+      		this.date = date;
+      	}
+      	
+      	public News() {
+      		// TODO Auto-generated constructor stub
+      	}
 
-   	@Override
-   	public String toString() {
-   		return "News [id=" + id + ", title=" + title + ", author=" + author
-   				+ ", date=" + date + "]";
-   	}
-   	
-   }
+      	@Override
+      	public String toString() {
+      		return "News [id=" + id + ", title=" + title + ", author=" + author
+      				+ ", date=" + date + "]";
+      	}
+      	
+      }
    ```
 
 3. 创建对象--关系映射文件  *.hbm.xml
@@ -227,10 +233,13 @@
    ```
 
 
+## 准备Hibernate环境
 
-## 2.准备Hibernate环境
+- 导入Hibernate必须的jar包
 
 ![](pic/2.png)
 
+- 导入数据库驱动的jar包
 
+![](pic/3.png)
 
