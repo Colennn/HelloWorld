@@ -243,3 +243,45 @@
 
 ![](pic/3.png)
 
+## Hibernate核心接口及工作原理
+
+![](pic/4.png)
+
+- Configuration：负责管理配置信息并启动Hibernate，创建SessionFactory。
+- SessionFactory：负责初始化Hibernate，创建session对象
+- Session：负责被持久化对象的CRUD操作。是一个单线程对象。
+  - 获得持久化对象的方法：get()、load()
+  - 持久化对象的保存，更新和删除：save()、update()、saveOrUpdate()、delete()
+  - 开启事务：beginTransaction()
+  - 管理Session的方法：isOpen()、flush()、clear()、evict()、close()
+- Query和Criteria接口：负责执行各种数据库查询
+- Transaction：负责事务相关的操作
+  - commit()：提交相关联的session实例
+  - rollback()：撤销事务操作
+  - wasCommitted()：检查事务是否提交
+
+
+
+```java
+//1.通过Configuration来读取配置文件hibernate.cfg.xml
+//由hibernate.cfg.xml中的<mapping resource="com/xx/User.hbm.xml"/>读取并解析映射信息
+Configuration config = new Configuration().configure();
+//2.创建一个 ServiceRegistry 对象
+ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry();
+//3.在ServiceRegistry中注册SessionFactory
+SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+//4. 创建一个 Session 对象
+Session session = sessionFactory.openSession();
+//5. 开启事务
+Transaction transaction = session.beginTransaction();
+//6. 执行保存操作
+News news = new News("Java12345", "ATGUIGU", new Date(new java.util.Date().getTime()));
+session.save(news);
+//7. 提交事务 
+transaction.commit();
+//8. 关闭 Session
+session.close();
+//9. 关闭 SessionFactory 对象
+sessionFactory.close();
+```
+
