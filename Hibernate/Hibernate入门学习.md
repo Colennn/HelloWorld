@@ -58,71 +58,71 @@
 
 2. 创建持久化类
 
-
    ```java
-      package com.atguigu.hibernate.helloworld;
+         package com.atguigu.hibernate.helloworld;
 
-      import java.sql.Blob;
-      import java.util.Date;
+         import java.sql.Blob;
+         import java.util.Date;
 
-      public class News {
-      	
-      	private Integer id;
-      	private String title;
-      	private String author;
-        	private Date date;
-        
-      	public Integer getId() { 
-      		return id;
-      	}
+         public class News {
+         	
+         	private Integer id;
+         	private String title;
+         	private String author;
+           	private Date date;
+           
+         	public Integer getId() { 
+         		return id;
+         	}
 
-      	public void setId(Integer id) {
-      		this.id = id;
-      	}
+         	public void setId(Integer id) {
+         		this.id = id;
+         	}
 
-      	public String getTitle() {
-      		return title;
-      	}
+         	public String getTitle() {
+         		return title;
+         	}
 
-      	public void setTitle(String title) {
-      		this.title = title;
-      	}
+         	public void setTitle(String title) {
+         		this.title = title;
+         	}
 
-      	public String getAuthor() {
-      		return author;
-      	}
+         	public String getAuthor() {
+         		return author;
+         	}
 
-      	public void setAuthor(String author) {
-      		this.author = author;
-      	}
+         	public void setAuthor(String author) {
+         		this.author = author;
+         	}
 
-      	public Date getDate() {
-      		return date;
-      	}
+         	public Date getDate() {
+         		return date;
+         	}
 
-      	public void setDate(Date date) {
-      		this.date = date;
-      	}
+         	public void setDate(Date date) {
+         		this.date = date;
+         	}
 
-      	public News(String title, String author, Date date) {
-      		super();
-      		this.title = title;
-      		this.author = author;
-      		this.date = date;
-      	}
-      	
-      	public News() {
-      		// TODO Auto-generated constructor stub
-      	}
+         	public News(String title, String author, Date date) {
+         		super();
+         		this.title = title;
+         		this.author = author;
+         		this.date = date;
+         	}
+         	
+         	public News() {
+         		// TODO Auto-generated constructor stub
+         	}
 
-      	@Override
-      	public String toString() {
-      		return "News [id=" + id + ", title=" + title + ", author=" + author
-      				+ ", date=" + date + "]";
-      	}
-      	
-      }
+         	@Override
+         	public String toString() {
+         		return "News [id=" + id + ", title=" + title + ", author=" + author
+         				+ ", date=" + date + "]";
+         	}
+         	
+         }
    ```
+
 
 3. 创建对象--关系映射文件  *.hbm.xml
 
@@ -228,7 +228,6 @@
    		//7. 关闭 SessionFactory 对象
    		sessionFactory.close();
    	}
-   	
    }
    ```
 
@@ -284,4 +283,54 @@ session.close();
 //9. 关闭 SessionFactory 对象
 sessionFactory.close();
 ```
+
+## Session概述
+
+​	Hibernate的Session接口是Hibernate向应用程序提供的操纵数据库的最主要的接口，它提供了基本的保存，更新，删除和加载Java对象的方法（上一小节有提到）。
+
+​	Session具有一个缓存，位于缓存中的对象成为持久化对象，它和数据库中的相关记录对应。Session能够在某些时间点，按照缓存中对象的变化来执行相关的SQL语句，来同步更新数据库，这一过程被陈伟刷新缓存（flush）。
+
+​	站在持久化的角度，Hibernate把对象分为4种状态：持久化状态、临时状态，游离状态、删除状态。Session的特定方法能使对象从一个状态转换到另一个状态。
+
+​	在Session接口的实现中包含一系列的Java集合，这些集合构成了Session缓存。只要Session实例没有结束生命周期，且没有清理缓存，则存放在它缓存中的对象也不会结束生命周期。Session缓存可以减少Hibernate应用程序访问数据库的频率。
+
+![](pic/5.png)
+
+```java
+New news = (News)session.get(News.class, 1);
+System.out.println(news);
+
+New news2 = (News)session.get(News.class, 1);
+System.out.println(news2);
+
+System.out.println(news == news2);
+//结果为1
+//Hibernate在查询的时候回将对象存入session缓存中
+```
+
+### flush()、refresh()、clear()
+
+​	flush()：Session 按照缓存中对象的属性变化来同步更新数据库
+
+​	refresh()：会强制发送select语句，以使session缓存中对象的状态和数据表中对应的记录保持一致。该方法的有效性需要配置事务的隔离级别为read commited(读已提交)。
+
+​	clear()：清除session中的缓存数据（不管缓存与数据库的同步）。
+
+![](pic/6.png)
+
+### 设定刷新缓存的时间点
+
+![](pic/7.png)
+
+
+
+## 数据库的隔离级别
+
+​	对于同时运行的多个事务，当这些事务访问数据库中相同的数据是，如果没有采取必要的隔离机制，就会导致各种并发问题：
+
+- 脏读：事务T1和T2。T1读取了已经被T2更新但还没有被提交的字段，若之后T2回滚，T1读取的内容就是临时且无效的。
+- 不可重复度：事务T1和T2。T1读取了一个字段，然后T2更新了该字段，之后，T1再次读取同一个字段，值就不同了。
+- 幻读：事务T1和T2。T1 从一个表中读取了一个字段，然后T2在该表中插入了一些新的行，之后,如果T1再次读取同一个表，就会多出几行。
+
+![](pic/8.png)
 
