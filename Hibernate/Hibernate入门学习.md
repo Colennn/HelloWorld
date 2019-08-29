@@ -362,3 +362,53 @@ System.out.println(news == news2);
   - OID不为null
   - 不再处于Session缓存中
   - 一般情况下，游离对象是由持久化对象转变过来的，因此在数据库中可能还存在于它对应的记录
+
+
+
+## Session的常用方法
+
+### save()
+
+- Session的save()方法使一个临时对象转变为持久化对象
+- Session的save()方法完成以下操作：
+  - 把News对象加入到Session缓存中，使它进入持久化状态。
+  - 选用映射文件制定的表示符生成器，为持久化对象分配唯一的OID。在使用代理主键的情况下，setId()方法为News对象设置OID是无效的
+  - <u>计划执行一条insert语句</u>：在flush缓存的时候
+- Hibernate通过持久化对象的OID来维持它和数据库相关记录的对应关系。当News对象处于持久话状态时，不允许程序随意修改它的ID
+- persist()和save()区别：
+  - 当以个OID不为null的对象执行save()方法时，会把该对象以一个新的OID保存到数据库中；但执行persist()会抛出一个异常
+
+### get()和load()
+
+- 都可以根据OID从数据库中加载一个持久化对象
+- 区别：
+  - 当数据库中不存在与OID对应的数据时，load()方法抛出ObjectNotFoundException异常，而get()方法返回null
+  - 两者采用不用的延迟检索策略：load方法持久延迟加载策略，而get不支持
+
+### update()
+
+- Session的update()方法使一个游离对象转变为持久化对象
+- 若希望Session仅当修改了News对象的属性时，才执行update()语句，可以把映射文件中元素的select-before-update设为true.该属性的默认值为false
+- 当update()方法关联一个游离对象时，如果在Session的缓存中已经存在相同OID的持久化对象，会抛出异常
+- 当update()方法关联一个游离对象时，如果在数据库中不存在相应的记录，也会抛出异常。
+
+### saveOrUpdate()
+
+- Session的savaOrUpdate()方法同时包含了save()与update()方法的功能
+- 判定对象为临时对象的标准
+  - Java对象的OID为null
+  - 映射对象中为<id>设置了unsaved-value  属性,并且Java对象的OID取值与这个unsaved-value属性值匹配
+
+![](pic/10.png)
+
+### merge()
+
+![](pic/11.png)
+
+### Session的delete()方法
+
+- Session的delete()方法既可以删除一个游离对象，也可以删除一个持久化对象
+- Session的delete()方法处理过程
+  - 计划执行一条delete语句
+  - 把对象从Session缓存中删除，该对象进入删除状态
+- Hibernate 的 cfg.xml配置文件中有一个hibernate.use_identifier_rollback属性,其默认值为false,若把它设为true,将改变delete()方法的运行行为:delete() 方法会把持久化对象或游离对象的 OID设置为null,使它们变为临时对象。
