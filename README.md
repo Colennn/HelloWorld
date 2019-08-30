@@ -9,7 +9,7 @@
 - [Redis、Jedis、Junit4](https://github.com/JavaCorn/eshop/blob/master/study/Redis.md)
 - [Jsonp、HttpClient跨域问题](https://github.com/JavaCorn/eshop/blob/master/study/AJAX%E3%80%81Jsonp%E3%80%81HttpClient.md)
 - IO
-  - [NIO、BIO、AIO、Netty](IO/io.md)
+  - [NIO、BIO、AIO、Netty](Java/IO/io.md)
 - Spring
   - [Spring知识点总结](https://github.com/JavaCorn/eshop/blob/master/study/spring.md)
   - [SSM整合知识点](Java/Spring/SSM/README.md)
