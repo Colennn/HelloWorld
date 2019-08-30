@@ -3,34 +3,31 @@
 个人笔记仓库😉
 
 
+## JAVA开发
 
-
-数据结构
-------
-- [数据结构与算法JAVA代码](https://github.com/JavaCorn/StudyNotes-DataStructrues-Algorithms)
-
-
-
-JAVA开发
-------
-- [Spring知识点总结](https://github.com/JavaCorn/eshop/blob/master/study/spring.md)
-- [SSM整合知识点](SSM/README.md)
 - [SOA结构、Dubbo原理](https://github.com/JavaCorn/eshop/blob/master/study/Dubbo.md)
 - [Redis、Jedis、Junit4](https://github.com/JavaCorn/eshop/blob/master/study/Redis.md)
 - [Jsonp、HttpClient跨域问题](https://github.com/JavaCorn/eshop/blob/master/study/AJAX%E3%80%81Jsonp%E3%80%81HttpClient.md)
+- IO
+  - [NIO、BIO、AIO、Netty](IO/io.md)
+- Spring
+  - [Spring知识点总结](https://github.com/JavaCorn/eshop/blob/master/study/spring.md)
+  - [SSM整合知识点](Java/Spring/SSM/README.md)
+
+## 数据结构
+
+- [数据结构与算法JAVA代码](https://github.com/JavaCorn/StudyNotes-DataStructrues-Algorithms)
 
 
+## 计算机网络相关
 
-计算机网络相关
-------
 - [Socket网络编程](Socket/socket网络编程.md)
 - [TCP之流量控制、拥塞控制](Socket/TCP之流量控制、拥塞控制.md)
-- [NIO、BIO、AIO、Netty](IO/io.md)
 
 
 
-SQL
-------
+## SQL
+
 - [MySQL基础](SQL/MySQL笔记.md)
 - [MySQL索引实现原理、索引使用策略](SQL/sqlIndex.md)
 
@@ -38,6 +35,12 @@ SQL
 ## ORM框架
 
 - [Hibernate入门学习](Hibernate/Hibernate入门学习.md)
+
+## 其他
+
+- [进制、位运算及其运用](Bit/进制、位运算及其运用.md)
+- [Linux常用命令及系统目录介绍](https://github.com/JavaCorn/eshop/blob/master/study/Linux.md)
+- [Nginx和VSFTPD相关知识点](https://github.com/JavaCorn/eshop/blob/master/study/Nginx.md)
 
 ## 读书笔记
 
@@ -47,17 +50,9 @@ SQL
   - [《小狗钱钱》](readingNotes/非技术类/《小狗钱钱》.md)
   - [《情商》](readingNotes/非技术类/《情商》.md)
 
-其他
-------
 
-- [进制、位运算及其运用](Bit/进制、位运算及其运用.md)
-- [Linux常用命令及系统目录介绍](https://github.com/JavaCorn/eshop/blob/master/study/Linux.md)
-- [Nginx和VSFTPD相关知识点](https://github.com/JavaCorn/eshop/blob/master/study/Nginx.md)
+## 更新记录
 
-
-
-更新记录
-------
 > 2019/07/15 ：
 > 1. 改变原来笔记的文件夹位置
 > 2. 新增Socket内容、SSM整合知识点
