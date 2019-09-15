@@ -34,18 +34,18 @@
 
 ## ORM框架
 
-- [Hibernate入门学习](Hibernate/Hibernate入门学习.md)
+- [Hibernate入门学习](ORM/Hibernate入门学习.md)
 
 ## 其他
 
-- [进制、位运算及其运用](Bit/进制、位运算及其运用.md)
+- [进制、位运算及其运用](Other/进制、位运算及其运用.md)
 - [Linux常用命令及系统目录介绍](https://github.com/JavaCorn/eshop/blob/master/study/Linux.md)
 - [Nginx和VSFTPD相关知识点](https://github.com/JavaCorn/eshop/blob/master/study/Nginx.md)
 
 ## 读书笔记
 
 - 技术类
-  - [《Java并发编程之美》](readingNotes/技术类/《Java并发编程之美》/《Java并发编程之美》.md)：共三章，目前已完成第一章
+  - [《Java并发编程之美》①](readingNotes/技术类/《Java并发编程之美》/《Java并发编程之美》.md)：共三章，目前已完成第一章
 - 非技术类
   - [《小狗钱钱》](readingNotes/非技术类/《小狗钱钱》.md)
   - [《情商》](readingNotes/非技术类/《情商》.md)
