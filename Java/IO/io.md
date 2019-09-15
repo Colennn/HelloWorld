@@ -1,6 +1,19 @@
 # BIO、NIO模型、代码实现
 
-[TOC]
+* [一、BIO — Blocking IO（Input \- Output）阻塞IO](#%E4%B8%80bio--blocking-ioinput---output%E9%98%BB%E5%A1%9Eio)
+  * [1\.BIO代码](#1bio%E4%BB%A3%E7%A0%81)
+  * [2\.阻塞IO为何阻塞？在哪里阻塞？](#2%E9%98%BB%E5%A1%9Eio%E4%B8%BA%E4%BD%95%E9%98%BB%E5%A1%9E%E5%9C%A8%E5%93%AA%E9%87%8C%E9%98%BB%E5%A1%9E)
+  * [3\.BIO模型](#3bio%E6%A8%A1%E5%9E%8B)
+* [二、NIO — Non\-block IO（大管家式的模型）](#%E4%BA%8Cnio--non-block-io%E5%A4%A7%E7%AE%A1%E5%AE%B6%E5%BC%8F%E7%9A%84%E6%A8%A1%E5%9E%8B)
+  * [1\.NIO — single Thread （Nio的单线程模型）](#1nio--single-thread-nio%E7%9A%84%E5%8D%95%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B)
+  * [2\.NIO单线程模式代码](#2nio%E5%8D%95%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%BC%8F%E4%BB%A3%E7%A0%81)
+  * [3\. NIO\-reactor模式（reactor响应式编程）](#3-nio-reactor%E6%A8%A1%E5%BC%8Freactor%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B)
+  * [4\.NIO多线程模式代码实现](#4nio%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%BC%8F%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0)
+* [三、AIO \- 不再需要轮询（asynchronous 异步）](#%E4%B8%89aio---%E4%B8%8D%E5%86%8D%E9%9C%80%E8%A6%81%E8%BD%AE%E8%AF%A2asynchronous-%E5%BC%82%E6%AD%A5)
+  * [1\.AIO模型](#1aio%E6%A8%A1%E5%9E%8B)
+  * [2\.AIO代码实现](#2aio%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0)
+* [四、Netty](#%E5%9B%9Bnetty)
+  * [代码实现](#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0)
 
 
 

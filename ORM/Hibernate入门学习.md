@@ -2,26 +2,22 @@
 
 ​	本文主要讲的是Hibernate的入门知识。
 
-## 目录
-
-* [Hibernate入门学习](#hibernate%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0)
-  * [目录](#%E7%9B%AE%E5%BD%95)
-  * [什么是Hibernate？什么是ORM？](#%E4%BB%80%E4%B9%88%E6%98%AFhibernate%E4%BB%80%E4%B9%88%E6%98%AForm)
-  * [Hibernate开发步骤](#hibernate%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4)
-  * [准备Hibernate环境](#%E5%87%86%E5%A4%87hibernate%E7%8E%AF%E5%A2%83)
-  * [Hibernate核心接口及工作原理](#hibernate%E6%A0%B8%E5%BF%83%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86)
-  * [Session概述](#session%E6%A6%82%E8%BF%B0)
-    * [flush()、refresh()、clear()](#flushrefreshclear)
-    * [设定刷新缓存的时间点](#%E8%AE%BE%E5%AE%9A%E5%88%B7%E6%96%B0%E7%BC%93%E5%AD%98%E7%9A%84%E6%97%B6%E9%97%B4%E7%82%B9)
-  * [数据库的隔离级别](#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB)
-    * [Hibernate的持久化对象](#hibernate%E7%9A%84%E6%8C%81%E4%B9%85%E5%8C%96%E5%AF%B9%E8%B1%A1)
-  * [Session的常用方法](#session%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95)
-    * [save()](#save)
-    * [get()和load()](#get%E5%92%8Cload)
-    * [update()](#update)
-    * [saveOrUpdate()](#saveorupdate)
-    * [merge()](#merge)
-    * [Session的delete()方法](#session%E7%9A%84delete%E6%96%B9%E6%B3%95)
+* [什么是Hibernate？什么是ORM？](#%E4%BB%80%E4%B9%88%E6%98%AFhibernate%E4%BB%80%E4%B9%88%E6%98%AForm)
+* [Hibernate开发步骤](#hibernate%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4)
+* [准备Hibernate环境](#%E5%87%86%E5%A4%87hibernate%E7%8E%AF%E5%A2%83)
+* [Hibernate核心接口及工作原理](#hibernate%E6%A0%B8%E5%BF%83%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86)
+* [Session概述](#session%E6%A6%82%E8%BF%B0)
+  * [flush()、refresh()、clear()](#flushrefreshclear)
+  * [设定刷新缓存的时间点](#%E8%AE%BE%E5%AE%9A%E5%88%B7%E6%96%B0%E7%BC%93%E5%AD%98%E7%9A%84%E6%97%B6%E9%97%B4%E7%82%B9)
+* [数据库的隔离级别](#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB)
+  * [Hibernate的持久化对象](#hibernate%E7%9A%84%E6%8C%81%E4%B9%85%E5%8C%96%E5%AF%B9%E8%B1%A1)
+* [Session的常用方法](#session%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95)
+  * [save()](#save)
+  * [get()和load()](#get%E5%92%8Cload)
+  * [update()](#update)
+  * [saveOrUpdate()](#saveorupdate)
+  * [merge()](#merge)
+  * [Session的delete()方法](#session%E7%9A%84delete%E6%96%B9%E6%B3%95)
 
 ## 什么是Hibernate？什么是ORM？
 

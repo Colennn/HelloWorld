@@ -1,8 +1,39 @@
 # socket网络编程
 
-
-
-[TOC]
+  * [什么是网络](#%E4%BB%80%E4%B9%88%E6%98%AF%E7%BD%91%E7%BB%9C)
+  * [什么是网络编程](#%E4%BB%80%E4%B9%88%E6%98%AF%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B)
+  * [7层网络模型\-OSI  or  TCP/IP五层模型](#7%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B-osi--or--tcpip%E4%BA%94%E5%B1%82%E6%A8%A1%E5%9E%8B)
+  * [TCP、UDP对比（表格）](#tcpudp%E5%AF%B9%E6%AF%94%E8%A1%A8%E6%A0%BC)
+  * [What is Socket?](#what-is-socket)
+  * [Socket的作用与组成](#socket%E7%9A%84%E4%BD%9C%E7%94%A8%E4%B8%8E%E7%BB%84%E6%88%90)
+  * [Socket传输原理](#socket%E4%BC%A0%E8%BE%93%E5%8E%9F%E7%90%86)
+  * [Socket之TCP](#socket%E4%B9%8Btcp)
+  * [Socket之UDP](#socket%E4%B9%8Budp)
+  * [TCP传输图解](#tcp%E4%BC%A0%E8%BE%93%E5%9B%BE%E8%A7%A3)
+  * [UDP传输图解](#udp%E4%BC%A0%E8%BE%93%E5%9B%BE%E8%A7%A3)
+* [Socket小试牛刀](#socket%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80)
+  * [报文、协议、Mac地址](#%E6%8A%A5%E6%96%87%E5%8D%8F%E8%AE%AEmac%E5%9C%B0%E5%9D%80)
+  * [IP、端口、远程服务器](#ip%E7%AB%AF%E5%8F%A3%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8)
+* [Socket\-UDP快速入门](#socket-udp%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8)
+  * [UDP是什么？](#udp%E6%98%AF%E4%BB%80%E4%B9%88)
+  * [为什么不可靠](#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%8F%AF%E9%9D%A0)
+  * [UDP能做什么](#udp%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88)
+* [UDP核心API讲解](#udp%E6%A0%B8%E5%BF%83api%E8%AE%B2%E8%A7%A3)
+  * [API\-DatagramSocket](#api-datagramsocket)
+* [UDP单播、广播、多播](#udp%E5%8D%95%E6%92%AD%E5%B9%BF%E6%92%AD%E5%A4%9A%E6%92%AD)
+* [Socket\-UDP快速入门](#socket-udp%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8-1)
+  * [TCP是什么？](#tcp%E6%98%AF%E4%BB%80%E4%B9%88)
+  * [TCP的机制](#tcp%E7%9A%84%E6%9C%BA%E5%88%B6)
+  * [TCP链接、传输流程](#tcp%E9%93%BE%E6%8E%A5%E4%BC%A0%E8%BE%93%E6%B5%81%E7%A8%8B)
+  * [TCP能做什么？](#tcp%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88)
+  * [TCP核心API讲解](#tcp%E6%A0%B8%E5%BF%83api%E8%AE%B2%E8%A7%A3)
+  * [服务器端Socket流程](#%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AFsocket%E6%B5%81%E7%A8%8B)
+  * [服务器端Socket流程](#%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AFsocket%E6%B5%81%E7%A8%8B-1)
+  * [扩展\-Socket与进程关系](#%E6%89%A9%E5%B1%95-socket%E4%B8%8E%E8%BF%9B%E7%A8%8B%E5%85%B3%E7%B3%BB)
+  * [TCP连接的可靠性](#tcp%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7)
+  * [三次握手\-数据随机的必要性](#%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B-%E6%95%B0%E6%8D%AE%E9%9A%8F%E6%9C%BA%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7)
+  * [可靠性连接\-四次挥手](#%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%BF%9E%E6%8E%A5-%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B)
+  * [TCP传输可靠性](#tcp%E4%BC%A0%E8%BE%93%E5%8F%AF%E9%9D%A0%E6%80%A7)
 
 
 
