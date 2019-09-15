@@ -41,6 +41,7 @@
 - [进制、位运算及其运用](Other/进制、位运算及其运用.md)
 - [Linux常用命令及系统目录介绍](https://github.com/JavaCorn/eshop/blob/master/study/Linux.md)
 - [Nginx和VSFTPD相关知识点](https://github.com/JavaCorn/eshop/blob/master/study/Nginx.md)
+- [软件测试](Test/软件测试.md)
 
 ## 读书笔记
 
@@ -94,5 +95,6 @@
 > 2019/9/15
 >
 > 1. 优化了所有文档的目录
+> 2. 新增软件测试
 
 
