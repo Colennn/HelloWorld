@@ -42,6 +42,7 @@
 - [Linux常用命令及系统目录介绍](https://github.com/JavaCorn/eshop/blob/master/study/Linux.md)
 - [Nginx和VSFTPD相关知识点](https://github.com/JavaCorn/eshop/blob/master/study/Nginx.md)
 - [软件测试](Test/软件测试.md)
+- [OOAD和UML](Other/UML/OOAD和UML.md)
 
 ## 读书笔记
 
@@ -59,6 +60,7 @@
 > 2019/9/19
 >
 > 1. 新增《只讲你关系的经济学》
+> 2. 新增OOAD和UML
 >
 > 2019/9/15
 >
