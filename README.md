@@ -47,6 +47,7 @@
 - [Nginx和VSFTPD相关知识点](https://github.com/JavaCorn/eshop/blob/master/study/Nginx.md)
 - [软件测试](Test/软件测试.md)
 - [OOAD和UML](Other/UML/OOAD和UML.md)
+- [IDEA常用快捷键](Other/IDEA常用快捷键.md)
 
 ## 读书笔记
 
@@ -64,6 +65,7 @@
 > 2019/9/20
 >
 > 1. 新增JavaScript基础
+> 2. 新增IDEA常用快捷键
 >
 > 2019/9/19
 >
