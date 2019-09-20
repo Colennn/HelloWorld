@@ -5,14 +5,14 @@
 
 ## JAVA开发
 
-- [SOA结构、Dubbo原理](https://github.com/JavaCorn/eshop/blob/master/study/Dubbo.md)
-- [Redis、Jedis、Junit4](https://github.com/JavaCorn/eshop/blob/master/study/Redis.md)
-- [Jsonp、HttpClient跨域问题](https://github.com/JavaCorn/eshop/blob/master/study/AJAX%E3%80%81Jsonp%E3%80%81HttpClient.md)
-- IO
-  - [NIO、BIO、AIO、Netty](Java/IO/io.md)
 - Spring
   - [Spring知识点总结](https://github.com/JavaCorn/eshop/blob/master/study/spring.md)
   - [SSM整合知识点](Java/Spring/SSM/README.md)
+- [SOA结构、Dubbo原理](https://github.com/JavaCorn/eshop/blob/master/study/Dubbo.md)
+- [Redis、Jedis、Junit4](https://github.com/JavaCorn/eshop/blob/master/study/Redis.md)
+- [Jsonp、HttpClient跨域问题](https://github.com/JavaCorn/eshop/blob/master/study/AJAX%E3%80%81Jsonp%E3%80%81HttpClient.md)
+- IO网络编程
+  - [NIO、BIO、AIO、Netty](Java/IO/io.md)
 
 ## 数据结构
 
@@ -36,6 +36,10 @@
 
 - [Hibernate入门学习](ORM/Hibernate入门学习.md)
 
+## 前端
+
+- [JavaScript基础](FrontEnd/JavaScript基础.md)
+
 ## 其他
 
 - [进制、位运算及其运用](Other/进制、位运算及其运用.md)
@@ -57,9 +61,13 @@
 
 ## 更新记录
 
+> 2019/9/20
+>
+> 1. 新增JavaScript基础
+>
 > 2019/9/19
 >
-> 1. 新增《只讲你关系的经济学》
+> 1. 新增《只讲你关心的经济学》
 > 2. 新增OOAD和UML
 >
 > 2019/9/15
