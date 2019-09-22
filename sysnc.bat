@@ -8,3 +8,8 @@ read message
 git commit -m "$message" --no-verify
 echo "开始提交代码……"
 git push origin master
+
+pid=$!
+
+wait ${pid}
+
