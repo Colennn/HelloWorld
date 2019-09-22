@@ -1,4 +1,4 @@
-## 拉取代码
+## 鎷夊彇浠ｇ爜
 
 sleep 1
 
@@ -6,16 +6,16 @@ git add .
 echo "input the message you wanna commit:"
 read message
 git commit -m "$message" --no-verify
-echo "start to pull……"
+echo "start to pull路路路"
 git pull origin master
 
 pid=$!
 
 wait ${pid}
 
-##提交代码
+##鎻愪氦浠ｇ爜
 
-echo "start to push……"
+echo "start to push路路路"
 git push origin master
 
 pid=$!
