@@ -53,23 +53,28 @@
 
 - 技术类
   - 《Java并发编程之美》
-    - [《Java并发编程之美》①](ReadingNotes/技术类/《Java并发编程之美》/《Java并发编程之美》.md)：共三章，目前已完成第一章
+    - [①并发编程基础](ReadingNotes/技术类/《Java并发编程之美》/《Java并发编程之美》.md)
   - 《Java编程思想》
     - [①一切都是对象](ReadingNotes/技术类/《Java编程思想》/①一切都是对象.md)
   - 《Head First 设计模式》
-    - [《Head First 设计模式》①](ReadingNotes/技术类/《Head First 设计模式》/《Head First 设计模式》.md)
-    - ​
+    - [①设计模式的原则](ReadingNotes/技术类/《Head First 设计模式》/《Head First 设计模式》.md)
 - 非技术类
   - [《小狗钱钱》](ReadingNotes/非技术类/《小狗钱钱》.md)
   - [《情商》](ReadingNotes/非技术类/《情商》.md)
   - [《财务自由之路》](ReadingNotes/非技术类/《财务自由之路》/《财务自由之路》.md)
   - [《只讲你关心的经济学》](ReadingNotes/非技术类/《只讲你关心的经济学》.md)
   - [《如何阅读一本书》](ReadingNotes/非技术类/《如何阅读一本书》/《如何阅读一本书》.md)
-  - [《少有人走的路》](ReadingNotes/非技术类/《少有人走的路》/《少有人走的路》.md)
+  - 《少有人走的路》
+    - [①自律与爱](ReadingNotes/非技术类/《少有人走的路》/①自律与爱.md)
 
 
 ## 更新记录
 
+> 2019/10/13
+>
+> 1.  更新目录
+> 2.  更新《少有人走的路》
+>
 > 2019/10/12
 >
 > 1.  新增《Java编程思想》①一切都是对象
