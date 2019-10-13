@@ -57,9 +57,7 @@
   - 《Java编程思想》
     - [①一切都是对象](ReadingNotes/技术类/《Java编程思想》/①一切都是对象.md)
   - 《Head First 设计模式》
-    - [①设计模式的原则](ReadingNotes/技术类/《Head First 设计模式》/《Head First 设计模式》.md)
-
-
+    - [①设计模式的原则](ReadingNotes/技术类/《HeadFirst设计模式》/《HeadFirst设计模式》.md)
 
 
 - 非技术类
