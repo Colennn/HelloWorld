@@ -58,7 +58,13 @@
   - 《Java编程思想》
     - [①一切都是对象](ReadingNotes/技术类/《Java编程思想》/①一切都是对象.md)
   - 《Head First 设计模式》
-    - [①设计模式的原则](ReadingNotes/技术类/《HeadFirst设计模式》/《HeadFirst设计模式》.md)
+    - [①设计模式原则](ReadingNotes/技术类/《HeadFirst设计模式》/①设计模式原则.md)
+    - [②策略模式](ReadingNotes/技术类/《HeadFirst设计模式》/②策略模式.md)
+    - [③观察者模式](ReadingNotes/技术类/《HeadFirst设计模式》/③观察者模式.md)
+    - [④装饰者模式](ReadingNotes/技术类/《HeadFirst设计模式》/④装饰者模式.md)
+    - [⑤工厂模式](ReadingNotes/技术类/《HeadFirst设计模式》/⑤工厂模式.md)
+    - [⑥单件模式](ReadingNotes/技术类/《HeadFirst设计模式》/⑥单件模式.md)
+    - [⑦适配器与外观模式](ReadingNotes/技术类/《HeadFirst设计模式》/⑦适配器与外观模式.md)
 
 
 - 非技术类
@@ -73,10 +79,16 @@
 
 ## 更新记录
 
+> 2019/10/19
+>
+> 1.  新增 费曼学习法
+> 2.  新增《HeadFirst设计模式》①设计模式原则
+> 3.  新增《HeadFirst设计模式》②策略模式
+> 4.  新增《HeadFirst设计模式》③观察者模式
+>
 > 2019/10/18
 >
 > 1.  新增《稀缺》
-> 2.  新增 费曼学习法
 >
 > 2019/10/15
 >
