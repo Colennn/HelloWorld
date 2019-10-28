@@ -14,6 +14,11 @@
 - IO网络编程
   - [NIO、BIO、AIO、Netty](Java/IO/io.md)
 
+## Python
+
+-   [Python高级特性](Python/Python高级特性.md)
+-   [AirTest自动化测试脚本](Python/AirTest自动化测试脚本.md)
+
 ## 数据结构
 
 - [数据结构与算法JAVA代码](https://github.com/JavaCorn/StudyNotes-DataStructrues-Algorithms)
@@ -79,6 +84,12 @@
 
 ## 更新记录
 
+> 2019/10/28
+>
+> 1.  新增《HeadFirst设计模式》③装饰者模式
+> 2.  新增Python高级特性
+> 3.  新增AirTest自动化测试脚本
+>
 > 2019/10/19
 >
 > 1.  新增 费曼学习法
