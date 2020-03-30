@@ -29,8 +29,6 @@
 - [Socket网络编程](Socket/socket网络编程.md)
 - [TCP之流量控制、拥塞控制](Socket/TCP之流量控制、拥塞控制.md)
 
-
-
 ## SQL
 
 - [MySQL基础](SQL/MySQL笔记.md)
@@ -57,34 +55,28 @@
 
 ## 读书笔记
 
-- 技术类
-  - 《Java并发编程之美》
-    - [①并发编程基础](ReadingNotes/技术类/《Java并发编程之美》/《Java并发编程之美》.md)
-  - 《Java编程思想》
-    - [①一切都是对象](ReadingNotes/技术类/《Java编程思想》/①一切都是对象.md)
-  - 《Head First 设计模式》
-    - [①设计模式原则](ReadingNotes/技术类/《HeadFirst设计模式》/①设计模式原则.md)
-    - [②策略模式](ReadingNotes/技术类/《HeadFirst设计模式》/②策略模式.md)
-    - [③观察者模式](ReadingNotes/技术类/《HeadFirst设计模式》/③观察者模式.md)
-    - [④装饰者模式](ReadingNotes/技术类/《HeadFirst设计模式》/④装饰者模式.md)
-    - [⑤工厂模式](ReadingNotes/技术类/《HeadFirst设计模式》/⑤工厂模式.md)
-    - [⑥单件模式](ReadingNotes/技术类/《HeadFirst设计模式》/⑥单件模式.md)
-    - [⑦适配器与外观模式](ReadingNotes/技术类/《HeadFirst设计模式》/⑦适配器与外观模式.md)
+- 《Java并发编程之美》
+  - [①并发编程基础](ReadingNotes/技术类/《Java并发编程之美》/《Java并发编程之美》.md)
+- 《Java编程思想》
+  - [①一切都是对象](ReadingNotes/技术类/《Java编程思想》/①一切都是对象.md)
+- 《Head First 设计模式》
+  - [①设计模式原则](ReadingNotes/技术类/《HeadFirst设计模式》/①设计模式原则.md)
+  - [②策略模式](ReadingNotes/技术类/《HeadFirst设计模式》/②策略模式.md)
+  - [③观察者模式](ReadingNotes/技术类/《HeadFirst设计模式》/③观察者模式.md)
+  - [④装饰者模式](ReadingNotes/技术类/《HeadFirst设计模式》/④装饰者模式.md)
+  - [⑤工厂模式](ReadingNotes/技术类/《HeadFirst设计模式》/⑤工厂模式.md)
+  - [⑥单件模式](ReadingNotes/技术类/《HeadFirst设计模式》/⑥单件模式.md)
+  - [⑦适配器与外观模式](ReadingNotes/技术类/《HeadFirst设计模式》/⑦适配器与外观模式.md)
 
 
-- 非技术类
-  - [《小狗钱钱》](ReadingNotes/非技术类/《小狗钱钱》.md)
-  - [《情商》](ReadingNotes/非技术类/《情商》.md)
-  - [《财务自由之路》](ReadingNotes/非技术类/《财务自由之路》/《财务自由之路》.md)
-  - [《只讲你关心的经济学》](ReadingNotes/非技术类/《只讲你关心的经济学》.md)
-  - [《如何阅读一本书》](ReadingNotes/非技术类/《如何阅读一本书》/《如何阅读一本书》.md)
-  - [《少有人走的路》](ReadingNotes/非技术类/《少有人走的路》/《少有人走的路》.md)
-  - [《稀缺》](ReadingNotes/非技术类/《稀缺》/《稀缺》.md)
-  - [《非暴力沟通》](ReadingNotes/非技术类/《非暴力沟通》/《非暴力沟通》.md)
 
 
 ## 更新记录
 
+> 2020/03/30
+>
+> 1. 转移非技术类读书笔记
+>
 > 2019/11/23
 >
 > 1.  新增《非暴力沟通》
@@ -121,26 +113,26 @@
 > 2.  新增《Head First 设计模式》
 > 3.  新增《少有人走的路》
 >
-> 2019/9/21
+> 2019/09/21
 >
 > 1. 新增《如何阅读一本书》
 >
-> 2019/9/20
+> 2019/09/20
 >
 > 1. 新增 JavaScript基础
 > 2. 新增 IDEA常用快捷键
 >
-> 2019/9/19
+> 2019/09/19
 >
 > 1. 新增《只讲你关心的经济学》
 > 2. 新增 OOAD和UML
 >
-> 2019/9/15
+> 2019/09/15
 >
 > 1. 优化了所有文档的目录
 > 2. 新增软件测试
 >
-> 2019/9/8
+> 2019/09/08
 >
 > 1. 新增《财务自由之路》
 >
