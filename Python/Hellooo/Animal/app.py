@@ -5,7 +5,8 @@ class Mammal:
 
 
 class Dog(Mammal):
-    pass
+    def bark(self):
+        print("bark")
 
 
 class Cat:
